@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        #frame-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #top-frame {
+            height: 20%;
+        }
+
+        #middle-frame {
+            height: 80%;
+            display: flex;
+        }
+
+        #left-frame {
+            width: 15%;
+        }
+
+        #right-frame {
+            width: 90%;
+        }
+
+        #bottom-frame {
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="frame-container">
+        <iframe id="top-frame" name="top" src="header.html" frameborder="0"></iframe>
+        <div id="middle-frame">
+            <iframe id="left-frame" name="left" src="departments.html" frameborder="0"></iframe>
+            <iframe id="right-frame" name="right" src="home.html" frameborder="0"></iframe>
+        </div>
+        <iframe id="bottom-frame" name="bottom" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
